@@ -213,7 +213,6 @@ if onsei:
             audio_file = open(fil, "rb")
             audio_bytes = audio_file.read()
             st.audio(audio_bytes) 
-            #st.audio(fil,format = "audio/mpeg") 
 if onsei2:
     for text in texts:
         if selected == text: 
@@ -221,7 +220,6 @@ if onsei2:
             audio_file2 = open(fil2, "rb")
             audio_bytes = audio_file2.read()
             st.audio(audio_bytes) 
-            #st.audio(fil2) 
-            #st.audio(fil2,format = "audio/mpeg")                
+            #st.audio(fil2)                
                        
     
