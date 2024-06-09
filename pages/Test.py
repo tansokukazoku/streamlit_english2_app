@@ -1,5 +1,4 @@
 import streamlit as st
-from playsound import playsound
 from PIL import Image
 
 
@@ -333,11 +332,11 @@ with col2:
                 if kaito_hyouji == t3:
                     img1 = Image.open('./data/正解.png')
                     st.image(img1,width=300)
-                    playsound('./data/Buzzer_seikai.mp3')
+                    st.audio('./data/Buzzer_seikai.mp3') 
                 else:
                     img2 = Image.open('./data/不正解.png')
                     st.image(img2,width=300)
-                    playsound('./data/Buzzer_fuseikai.mp3')
+                    st.audio('./data/Buzzer_fuseikai.mp3')
                         
                 
                 

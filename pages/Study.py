@@ -1,6 +1,4 @@
 import streamlit as st
-from playsound import playsound
-from gtts import gTTS
 import os
 
 st.title('さほのえいご学習')
@@ -212,11 +210,11 @@ if onsei:
     for text in texts:
         if selected == text: 
             fil = './音声データ2/'+Lesson+'/'+text+'.mp3'
-            playsound(fil) 
+            st.audio(fil,format = "audio/mpeg") 
 if onsei2:
     for text in texts:
         if selected == text: 
             fil2 = './音声データ_slow/'+Lesson+'/'+text+'.mp3'
-            playsound(fil2)               
+            st.audio(fil2,format = "audio/mpeg")                
                        
     
