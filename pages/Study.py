@@ -210,11 +210,13 @@ if onsei:
     for text in texts:
         if selected == text: 
             fil = './音声データ2/'+Lesson+'/'+text+'.mp3'
-            st.audio(fil,format = "audio/mpeg") 
+            st.audio(fil) 
+            #st.audio(fil,format = "audio/mpeg") 
 if onsei2:
     for text in texts:
         if selected == text: 
             fil2 = './音声データ_slow/'+Lesson+'/'+text+'.mp3'
-            st.audio(fil2,format = "audio/mpeg")                
+            st.audio(fil2) 
+            #st.audio(fil2,format = "audio/mpeg")                
                        
     
