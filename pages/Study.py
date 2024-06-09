@@ -18,7 +18,7 @@ if Lesson == 'Lesson1':
             }
 elif Lesson == 'Lesson2':
     texts = {
-            'I live in Yokohama':'ぼくは横浜に住んでいます','Hou about you':'あなたはどうですか',
+            'I live in Yokohama':'ぼくは横浜に住んでいます','How about you':'あなたはどうですか',
             'I am in the soccer club':'僕はサッカークラブに入っています',
             'I am from America':'私はアメリカ出身です','What is your name':'あなたの名前は何ですか',
             'I am Yutaka':'僕はユタカです','I am from Japan':'僕は日本出身です',
