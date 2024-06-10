@@ -192,7 +192,7 @@ elif Lesson == 'Lesson2404':
 
 selected = st.radio('えいご',texts,index=1,horizontal=True)
 
-col1,col2,col3 = st.columns(3)
+col1,col2,col3,col4 = st.columns(4)
 
 with col1:
     onsei = st.button('発音')
@@ -200,6 +200,8 @@ with col2:
     onsei2 = st.button('発音(スロー)')
 with col3:
     jp_btn = st.button('日本語')
+with col4:
+    sound = st.button('音を鳴らす')
 
 if jp_btn:
     for text in texts:
@@ -220,6 +222,11 @@ if onsei2:
             audio_file2 = open(fil2, "rb")
             audio_bytes = audio_file2.read()
             st.audio(audio_bytes) 
-            #st.audio(fil2)                
+            #st.audio(fil2)
+if sound:
+    for text in texts:
+        if selected == text: 
+            fil3 = './音声データ2/'+Lesson+'/'+text+'.mp3'
+            st.audio(fil3,format = "audio/mpeg")                 
                        
     
