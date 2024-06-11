@@ -211,17 +211,22 @@ if onsei:
         if selected == text: 
             #fil = './音声データ2/'+Lesson+'/'+text+'.mp3'
             fil = './音声データ2/'+Lesson+'/'+text+'.mp3'
-            audio_file = open(fil, "rb")
-            audio_bytes = audio_file.read()
-            st.audio(audio_bytes) 
+            #audio_file = open(fil,"r",encoding='utf-8')
+            #audio_bytes = audio_file.read()
+            #audio_file.close()
+            #st.audio(audio_bytes)
+            #time.sleep(0.5)
+            st.audio(fil)  
 if onsei2:
     for text in texts:
         if selected == text: 
             #fil2 = './音声データ_slow/'+Lesson+'/'+text+'.mp3'
             fil2 = './音声データ_slow/'+Lesson+'/'+text+'.mp3'
-            audio_file2 = open(fil2, "rb")
-            audio_bytes = audio_file2.read()
-            st.audio(audio_bytes) 
-            #st.audio(fil2)   
+            #audio_file2 = open(fil2,"rb",encoding='utf-8')
+            #audio_bytes = audio_file2.read()
+            #audio_file2.close()
+            #st.audio(audio_bytes)
+            #time.sleep(0.5)
+            st.audio(fil2)   
                        
     
